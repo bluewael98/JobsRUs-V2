@@ -23,12 +23,18 @@ const Navbar = () => {
         <nav
           className={`fixed top-0 w-screen text-lg flex px-10 py-4 justify-center items-center z-40 shadow-sm text-primary font-bebas font-semibold bg-lavender `}
         >
-          <div className=" flex justify-between w-full max-w-[1400px]">
-            <div className="min-w-[200px]">
-              <img src="/jobsrus.png" className="max-w-[50px]" />
+          <div className=" flex justify-between w-full max-w-[1400px] py-0 px-0">
+            <div className="flex flex-row justify-center items-center gap-2">
+              <img src="/jobsrus.png" className="max-w-[80px] " />
+              <p className="text-2xl font-bold hidden min-[1400px]:flex ">
+                JOBS<span className="text-alt2">R</span>US{" "}
+              </p>
+              <p className="font-normal text-[16px] hidden min-[1400px]:flex">
+                Your Goal, Our Target.
+              </p>
             </div>
 
-            <div className="flex justify-center items-center gap-4 font-bebas text-[18px] font-bold ">
+            <div className="flex justify-center items-center gap-3 font-bebas text-[16px] font-bold ">
               <div className=" rounded-md py-2 px-4 transition duration-300 flex justify-center items-center gap-10">
                 <Link
                   href="/"
@@ -60,13 +66,14 @@ const Navbar = () => {
                   label="NDIS"
                   inline={true}
                   className="w-[200px] bg-lavender shadow-lg"
+                  data-dropdown-toggle="{hover}"
                 >
                   <Dropdown.Item>
                     <Link
                       href="/ndis-pricing"
                       className="group text-primary transition-all duration-300 ease-in-out"
                     >
-                      <h2 className="bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] group-hover:opacity-80 transition-all duration-500 ease-out">
+                      <h2 className="text-[16px] bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] group-hover:opacity-80 transition-all duration-500 ease-out">
                         NDIS SERVICES
                       </h2>
                     </Link>
@@ -76,7 +83,7 @@ const Navbar = () => {
                       href="/ndis-services"
                       className="group text-primary transition-all duration-300 ease-in-out"
                     >
-                      <h2 className="bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] group-hover:opacity-80 transition-all duration-500 ease-out">
+                      <h2 className="text-[16px] bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] group-hover:opacity-80 transition-all duration-500 ease-out">
                         NDIS PRICING
                       </h2>
                     </Link>
@@ -90,14 +97,33 @@ const Navbar = () => {
                     CONTACT
                   </h2>
                 </Link>
-                <Link
-                  href="/work-with-us"
-                  className="group text-lavender transition-all duration-300 ease-in-out"
+
+                <Dropdown
+                  label="LOOKING FOR WORK?"
+                  inline={true}
+                  className="w-[200px] bg-lavender shadow-lg"
                 >
-                  <h2 className="bg-left-bottom bg-primary bg-gradient-to-r from-lavender to-lavender bg-[length:0%_50px] bg-no-repeat group-hover:bg-[length:100%_50px] group-hover:opacity-80 group-hover:text-primary transition-all duration-500 ease-out py-2 px-3 rounded-full">
-                    JOIN OUR TEAM
-                  </h2>
-                </Link>
+                  <Dropdown.Item>
+                    <Link
+                      href="/ndis-pricing"
+                      className="group text-primary transition-all duration-300 ease-in-out"
+                    >
+                      <h2 className="text-[16px] bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] group-hover:opacity-80 transition-all duration-500 ease-out">
+                        JOIN OUR TEAM
+                      </h2>
+                    </Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link
+                      href="/ndis-services"
+                      className="group text-primary transition-all duration-300 ease-in-out"
+                    >
+                      <h2 className="text-[16px] bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] group-hover:opacity-80 transition-all duration-500 ease-out">
+                        DISABILITY WORK PORTAL
+                      </h2>
+                    </Link>
+                  </Dropdown.Item>
+                </Dropdown>
               </div>
             </div>
           </div>
