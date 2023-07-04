@@ -1,5 +1,12 @@
 import React from "react";
 import ContactForm from "@/components/ContactForm";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact us",
+  description:
+    "Contact JobsRUs for all your NDIS employment needs. Our contact details are available here.",
+};
 const Contact = () => {
   return (
     <section className=" flex justify-center flex-col mt-[80px]  items-center font-Bebas xxs:text ">

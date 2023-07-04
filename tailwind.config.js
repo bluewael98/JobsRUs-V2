@@ -9,6 +9,22 @@ module.exports = {
   plugins: [require("flowbite/plugin")],
   theme: {
     extend: {
+      keyframes: {
+        float: {
+          "0%": {
+            transform: "translatey(0px)",
+          },
+          "50%": {
+            transform: "translatey(-20px)",
+          },
+          "100%": {
+            transform: "translatey(0px)",
+          },
+        },
+      },
+      animation: {
+        float: "float 6s ease-in-out infinite",
+      },
       colors: {
         primary: "#303FA1",
         secondary: "#6366B8",

@@ -1,19 +1,16 @@
 "use client";
 import React from "react";
-import Portal from "@/components/Portal";
 import { Widget } from "@typeform/embed-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Disability Job Portal",
-  description:
-    "Discover your dream job and take the next step in your career with our comprehensive job portal. ",
+  title: "Work with us",
+  description: "Come work with us, we would love to have you part of our team.",
 };
 export default function Home() {
   return (
     <main className="flex min-h-screen w-screen justify-center bg-lavender mt-[90px]">
-      <Portal />
-      <Widget id="Z4KYGr5j" className="w-screen h-screen" />
+      <Widget id="58b1b4ad-d661" className="w-screen h-screen" />
     </main>
   );
 }

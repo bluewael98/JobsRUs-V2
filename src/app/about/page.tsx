@@ -4,6 +4,12 @@ import ContactTransition from "@/components/ContactTransition";
 import UseMediaQuery from "@/components/UseMediaQuery";
 import Team from "@/components/team";
 import { motion } from "framer-motion";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About us",
+  description: "Learn about our values and mission at JobsRUs.",
+};
 
 const AboutUs = () => {
   const isSmallDevice = UseMediaQuery("(max-width: 1020px)");

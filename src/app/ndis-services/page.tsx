@@ -6,6 +6,13 @@ import { School, Badge, SensorOccupied, Diversity3 } from "@mui/icons-material";
 import UseMediaQuery from "@/components/UseMediaQuery";
 import ContactTransition from "@/components/ContactTransition";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "NDIS Services",
+  description:
+    "View our transparent services and choose the right service to help you access your desired employment goals.",
+};
 
 const NDISServices = () => {
   const isLargeDevice = UseMediaQuery("(min-width: 1440px)");

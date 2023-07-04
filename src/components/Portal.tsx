@@ -98,8 +98,8 @@ export default function Portal() {
           },
         }}
       />
-      <div className=" max-w-screen w-[70%] z-[10] items-center  justify-between flex  text-6xl font-Bebas font-bold text-lavender rounded-md  h-[80%]">
-        <div className="flex items-start flex-col justify-start">
+      <div className=" w-screen max-w-[1200px] z-[10] items-center flex-col justify-center min-[945px]:flex-row  min-[945px]:justify-between flex  text-6xl font-Bebas font-bold text-lavender rounded-md  h-[80%] ">
+        <div className="flex min-[945px]:items-start items-center flex-col min-[945px]:justify-start justify-center">
           {/* <img src="/jobsruslogo.png" className="w-[100px] " /> */}
           <p className="">
             Jobs <span className="">R</span> Us

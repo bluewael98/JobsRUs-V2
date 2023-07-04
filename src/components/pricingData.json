@@ -1,0 +1,82 @@
+[
+  {
+    "support": "Employment support",
+    "items": [
+      {
+        "supportDesc": "Weekday Daytime – TTP",
+        "price": "$66.45",
+        "itemNo": "04_801_0133_5_1_T"
+      },
+      {
+        "supportDesc": "Weekday Evening – TTP",
+        "price": "$73.21",
+        "itemNo": "04_802_0133_5_1_T"
+      },
+      {
+        "supportDesc": "Saturday – TTP",
+        "price": "$93.50",
+        "itemNo": "04_803_0133_5_1_T"
+      },
+      {
+        "supportDesc": "Sunday – TTP",
+        "price": "$118.78",
+        "itemNo": "04_804_0133_5_1 "
+      },
+      {
+        "supportDesc": "Public Holiday – TTP",
+        "price": "$147.62",
+        "itemNo": "04_805_0133_5_1_T"
+      }
+    ]
+  },
+  {
+    "support": "Increased Social & Community Participation",
+    "items": [
+      {
+        "supportDesc": "Life Transition Planning Incl. Mentoring Peer-Support And Indiv Skill Development",
+        "price": "$74.63",
+        "itemNo": "09_006_0106_6_3"
+      },
+      {
+        "supportDesc": "Innovative Community Participation",
+        "price": "$74.63",
+        "itemNo": "09_008_0116_6_3"
+      },
+      {
+        "supportDesc": "Community Participation Activities",
+        "price": "$74.63",
+        "itemNo": "09_011_0125_6_3"
+      },
+      {
+        "supportDesc": "Skills Development And Training",
+        "price": "$74.63",
+        "itemNo": "09_009_0117_6_3"
+      }
+    ]
+  },
+  {
+    "support": "SLES (School Leavers Employment Support)",
+    "items": [
+      {
+        "supportDesc": "SLES is run as a 10 week program and reviewed in the two week holidays/break between the programs. During those two weeks we will review progress and outcomes and make recommendations for the following term.",
+        "price": "-",
+        "itemNo": "-"
+      },
+      {
+        "supportDesc": "School Leaver Employment Supports",
+        "price": "$70.87",
+        "itemNo": "09_008_0116_6_3"
+      }
+    ]
+  },
+  {
+    "support": "Employment Counselling",
+    "items": [
+      {
+        "supportDesc": "Employment Related Assessment & Counselling",
+        "price": "$193.99",
+        "itemNo": "09_008_0116_6_3"
+      }
+    ]
+  }
+]

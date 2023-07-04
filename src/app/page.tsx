@@ -4,6 +4,12 @@ import Reviews from "@/components/Reviews";
 import ContactForm from "@/components/ContactForm";
 import Facts from "@/components/Facts";
 import HeroSection from "@/components/HeroSection";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "JobsRUs - Home",
+  description: "Empowering individuality through Personalised NDIS solutions.",
+};
 
 const Home = () => {
   return (

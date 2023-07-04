@@ -6,6 +6,13 @@ import WeAreHiring from "@/components/WeAreHiring";
 import ContactTransition from "@/components/ContactTransition";
 import { Employees, OurTeamData, OurTeamMobile } from "@/components/Data";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our team",
+  description: "Our team of HEROES.",
+};
+
 const OurTeam = () => {
   const [open, setOpen] = useState(false);
 

@@ -1,8 +1,14 @@
 "use client";
 import React from "react";
 import ContactTransition from "@/components/ContactTransition";
-import PricingTable from "@/components/PricingTable";
+import Pricing from "@/components/Pricing";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "NDIS Pricing",
+  description:
+    "View our transparent pricing and choose the right service to help you access your desired employment goals.",
+};
 const NDISPricing = () => {
   return (
     <section className="mt-[80px]  flex items-center justify-center flex-col font-Oswald ">
@@ -39,9 +45,9 @@ const NDISPricing = () => {
           remote and very remote participants
         </h2>
       </div>
-      <div className="xxs:w-[370px] ss:w-[500px] xs:w-[440px] sm:w-[700px] md:w-[1000px] ">
-        <PricingTable />
-      </div>
+
+      <Pricing />
+
       <div className="flex justify-center items-center mt-10">
         <a href="https://kor01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.ndis.gov.au%2Fmedia%2F4540%2Fdownload%3Fattachment&data=05%7C01%7C%7C1ad00d356f9e4f589c3b08db17941eab%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638129697157750333%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=qPO7NIY6aahGQc6h2aoFRZyx5jZwyHCspcWkK61QR1I%3D&reserved=0">
           <button className="py-2 px-4 bg-primary rounded-full shadow-md text-lavender text-xl hover:scale-105 transition duration-300">
