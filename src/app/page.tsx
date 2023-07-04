@@ -4,16 +4,18 @@ import Reviews from "@/components/Reviews";
 import ContactForm from "@/components/ContactForm";
 import Facts from "@/components/Facts";
 import HeroSection from "@/components/HeroSection";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "JobsRUs - Home",
-  description: "Empowering individuality through Personalised NDIS solutions.",
-};
+import Head from "next/head";
 
 const Home = () => {
   return (
     <section className="  w-full bg-lavender font-Oswald overflow-hidden mt-[80px] ">
+      <Head>
+        <title>JobsRUs - Home</title>
+        <meta
+          name="description"
+          content="Empowering individuality through Personalised NDIS solutions."
+        />
+      </Head>
       {/* Hero Seciton */}
       <HeroSection />
 

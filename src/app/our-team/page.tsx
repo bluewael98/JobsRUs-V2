@@ -6,12 +6,7 @@ import WeAreHiring from "@/components/WeAreHiring";
 import ContactTransition from "@/components/ContactTransition";
 import { Employees, OurTeamData, OurTeamMobile } from "@/components/Data";
 import Image from "next/image";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Our team",
-  description: "Our team of HEROES.",
-};
+import Head from "next/head";
 
 const OurTeam = () => {
   const [open, setOpen] = useState(false);
@@ -27,6 +22,10 @@ const OurTeam = () => {
   };
   return (
     <section className=" flex justify-center flex-col mt-[80px] items-center font-Oswald">
+      <Head>
+        <title>Our team</title>
+        <meta name="description" content="Our team of HEROES." />
+      </Head>
       <WeAreHiring />
       {/* HEADER */}
       {isLargeDevice ? (

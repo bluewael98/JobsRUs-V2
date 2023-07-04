@@ -4,12 +4,7 @@ import ContactTransition from "@/components/ContactTransition";
 import UseMediaQuery from "@/components/UseMediaQuery";
 import Team from "@/components/team";
 import { motion } from "framer-motion";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "About us",
-  description: "Learn about our values and mission at JobsRUs.",
-};
+import Head from "next/head";
 
 const AboutUs = () => {
   const isSmallDevice = UseMediaQuery("(max-width: 1020px)");
@@ -24,6 +19,13 @@ const AboutUs = () => {
 
   return (
     <section className=" flex justify-center flex-col mt-[80px]  items-center font-Oswald overflow-hidden">
+      <Head>
+        <title>About us</title>
+        <meta
+          name="description"
+          content="Learn about our values and mission at JobsRUs."
+        />
+      </Head>
       <div className="w-[100%] bg-primary relative flex justify-center items-center md:h-[220px] xxs:h-[150px] overflow-hidden z-10 mb-5">
         <div className="flex flex-col justify-center ">
           <h1 className="  xxs:text-5xl md:text-6xl font-extrabold font-Oswald bottom-4  text-lavender z-10 ">
