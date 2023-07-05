@@ -1,18 +1,16 @@
-"use client";
-import React from "react";
 import ContactTransition from "@/components/ContactTransition";
 import Pricing from "@/components/Pricing";
-import Head from "next/head";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "NDIS Pricing",
+  description:
+    "View our transparent pricing and choose the right service to help you access your desired employment goals.",
+};
+
 const NDISPricing = () => {
   return (
     <section className="mt-[80px]  flex items-center justify-center flex-col font-Oswald ">
-      <Head>
-        <title>NDIS Pricing</title>
-        <meta
-          name="description"
-          content="View our transparent pricing and choose the right service to help you access your desired employment goals."
-        />
-      </Head>
       <div className="w-[100%] bg-primary relative flex justify-center items-center md:h-[220px] xxs:h-[150px] overflow-hidden z-10 mb-5">
         <div className="flex flex-col justify-center ">
           <h1 className="  xxs:text-5xl md:text-6xl font-extrabold font-Oswald bottom-4  text-lavender z-10 ">

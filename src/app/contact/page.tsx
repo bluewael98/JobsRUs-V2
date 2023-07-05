@@ -1,17 +1,16 @@
 import React from "react";
 import ContactForm from "@/components/ContactForm";
-import Head from "next/head";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact us",
+  description:
+    "Contact JobsRUs for all your NDIS employment needs. Our contact details are available here.",
+};
 
 const Contact = () => {
   return (
     <section className=" flex justify-center flex-col mt-[80px]  items-center font-Bebas xxs:text ">
-      <Head>
-        <title>Contact us</title>
-        <meta
-          name="description"
-          content="Contact JobsRUs for all your NDIS employment needs. Our contact details are available here."
-        />
-      </Head>
       <div className="w-[100%] bg-primary relative flex justify-center items-center md:h-[220px] xxs:h-[150px] overflow-hidden z-10">
         <div className="flex flex-col justify-center ">
           <h1 className="  xxs:text-5xl md:text-6xl font-extrabold font-Oswald bottom-4  text-lavender z-10 ">

@@ -1,10 +1,11 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { Dropdown } from "flowbite-react";
+import { Dropdown, css } from "@nextui-org/react";
 import UseMediaQuery from "./UseMediaQuery";
 import { MenuRounded, CloseRounded } from "@mui/icons-material";
 import { motion, AnimatePresence } from "framer-motion";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 const Navbar = () => {
   const hamburgerMenu = UseMediaQuery("(max-width: 1179px)");
@@ -62,31 +63,35 @@ const Navbar = () => {
                   </h2>
                 </Link>
 
-                <Dropdown
-                  label="NDIS"
-                  inline={true}
-                  className="w-[200px] bg-lavender shadow-lg"
-                >
-                  <Dropdown.Item>
-                    <Link
-                      href="/ndis-services"
-                      className="group text-primary transition-all duration-300 ease-in-out"
-                    >
-                      <h2 className="text-[16px] bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] group-hover:opacity-80 transition-all duration-500 ease-out">
-                        NDIS SERVICES
-                      </h2>
-                    </Link>
-                  </Dropdown.Item>
-                  <Dropdown.Item>
-                    <Link
-                      href="/ndis-pricing"
-                      className="group text-primary transition-all duration-300 ease-in-out"
-                    >
-                      <h2 className="text-[16px] bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] group-hover:opacity-80 transition-all duration-500 ease-out">
-                        NDIS PRICING
-                      </h2>
-                    </Link>
-                  </Dropdown.Item>
+                <Dropdown>
+                  <Dropdown.Trigger>
+                    <div className="flex flex-row font-Bebas text-primary text-[16px] font-bold cursor-pointer">
+                      <p>NDIS</p>
+                      <ArrowDropDownIcon />
+                    </div>
+                  </Dropdown.Trigger>
+                  <Dropdown.Menu aria-label="Static Actions">
+                    <Dropdown.Item>
+                      <Link
+                        href="/ndis-services"
+                        className="group text-primary transition-all duration-300 ease-in-out"
+                      >
+                        <h2 className="text-[16px] bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] group-hover:opacity-80 transition-all duration-500 ease-out">
+                          NDIS SERVICES
+                        </h2>
+                      </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link
+                        href="/ndis-pricing"
+                        className="group text-primary transition-all duration-300 ease-in-out"
+                      >
+                        <h2 className="text-[16px] bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] group-hover:opacity-80 transition-all duration-500 ease-out">
+                          NDIS PRICING
+                        </h2>
+                      </Link>
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
                 </Dropdown>
                 <Link
                   href="/contact"
@@ -97,31 +102,35 @@ const Navbar = () => {
                   </h2>
                 </Link>
 
-                <Dropdown
-                  label="LOOKING FOR WORK?"
-                  inline={true}
-                  className="w-[200px] bg-lavender shadow-lg"
-                >
-                  <Dropdown.Item>
-                    <Link
-                      href="/work-with-us"
-                      className="group text-primary transition-all duration-300 ease-in-out"
-                    >
-                      <h2 className="text-[16px] bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] group-hover:opacity-80 transition-all duration-500 ease-out">
-                        JOIN OUR TEAM
-                      </h2>
-                    </Link>
-                  </Dropdown.Item>
-                  <Dropdown.Item>
-                    <Link
-                      href="/portal"
-                      className="group text-primary transition-all duration-300 ease-in-out"
-                    >
-                      <h2 className="text-[16px] bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] group-hover:opacity-80 transition-all duration-500 ease-out">
-                        DISABILITY WORK PORTAL
-                      </h2>
-                    </Link>
-                  </Dropdown.Item>
+                <Dropdown>
+                  <Dropdown.Trigger>
+                    <div className="flex flex-row font-Bebas text-primary text-[16px] font-bold cursor-pointer">
+                      <p>LOOKING FOR WORK?</p>
+                      <ArrowDropDownIcon />
+                    </div>
+                  </Dropdown.Trigger>
+                  <Dropdown.Menu aria-label="Static Actions">
+                    <Dropdown.Item>
+                      <Link
+                        href="/work-with-us"
+                        className="group text-primary transition-all duration-300 ease-in-out"
+                      >
+                        <h2 className="text-[16px] bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] group-hover:opacity-80 transition-all duration-500 ease-out">
+                          JOIN OUR TEAM
+                        </h2>
+                      </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link
+                        href="/portal"
+                        className="group text-primary transition-all duration-300 ease-in-out"
+                      >
+                        <h2 className="text-[16px] bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] group-hover:opacity-80 transition-all duration-500 ease-out">
+                          DISABILITY WORK PORTAL
+                        </h2>
+                      </Link>
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
                 </Dropdown>
               </div>
             </div>
