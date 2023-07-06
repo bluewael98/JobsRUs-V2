@@ -1,4 +1,4 @@
-import PortalPage from "@/components/PortalPage";
+import PortalPage from "@/scenes/PortalPage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

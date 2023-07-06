@@ -1,4 +1,4 @@
-import NDISServices from "@/components/NDISServices";
+import NDISServices from "@/scenes/NDISServices";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

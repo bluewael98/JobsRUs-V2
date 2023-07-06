@@ -1,4 +1,4 @@
-import WorkWithUs from "@/components/WorkWithUs";
+import WorkWithUs from "@/scenes/WorkWithUs";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

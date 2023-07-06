@@ -6,6 +6,7 @@ import UseMediaQuery from "./UseMediaQuery";
 import { MenuRounded, CloseRounded } from "@mui/icons-material";
 import { motion, AnimatePresence } from "framer-motion";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import { ArrowForwardIosRounded } from "@mui/icons-material";
 
 const Navbar = () => {
   const hamburgerMenu = UseMediaQuery("(max-width: 1179px)");
@@ -143,7 +144,7 @@ const Navbar = () => {
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
             {" "}
-            <MenuRounded />{" "}
+            <MenuRounded className="text-primary" fontSize="large" />{" "}
           </button>
           {isMenuToggled && (
             <AnimatePresence>
@@ -155,51 +156,65 @@ const Navbar = () => {
                   animate="visible"
                   transition={{ ease: "easeOut", duration: 0.2 }}
                   exit="exit"
-                  className="fixed left-0 top-0 bottom-0 height[100%] bg-lavender p-2 w-[300px] transition-300 shadow-md  "
+                  className="fixed bg-lavender p-2 top-0 bottom-0 left-0 right-0 w-screen h-screen transition-300 shadow-md  "
                 >
                   {/* CLOSE ICON */}
                   <div className="flex justify-end p-12">
                     <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                      <CloseRounded />
+                      <CloseRounded className="text-primary" fontSize="large" />
                     </button>
                   </div>
 
                   {/* MENU ITEMS */}
-                  <div className="flex flex-col gap-10 ml-5 text-2xl  text-primary font-semibold max-w-screen">
-                    <Link href="/">
-                      <div className="rounded-md py-2 px-4 transition duration-300">
-                        Home
-                      </div>
+                  <div className="flex flex-col items-start justify-between  h-[50%] font-Jost text-[#292F36] mt-5">
+                    <Link
+                      href="/"
+                      className=" border-b-[1px] w-full text-start flex justify-between items-center "
+                    >
+                      <p className="text-[20px] text-primary">Home</p>
+                      <ArrowForwardIosRounded className="text-primary" />
                     </Link>
-                    <Link href="/about">
-                      <div className="rounded-md py-2 px-4 transition duration-300">
-                        About us
-                      </div>
+                    <Link
+                      href="/portal"
+                      className=" border-b-[1px] w-full text-start flex justify-between items-center "
+                    >
+                      <p className="text-[20px] text-primary">Job Portal</p>
+                      <ArrowForwardIosRounded className="text-primary" />
                     </Link>
-                    <Link href="/ndis-services">
-                      <div className="rounded-md py-2 px-4 transition duration-300">
-                        NDIS Services
-                      </div>
+                    <Link
+                      href="/about"
+                      className=" border-b-[1px] w-full text-start flex justify-between items-center "
+                    >
+                      <p className="text-[20px] text-primary">About us</p>
+                      <ArrowForwardIosRounded className="text-primary" />
                     </Link>
-                    <Link href="/ndis-pricing">
-                      <div className="rounded-md py-2 px-4 transition duration-300">
-                        NDIS Pricing
-                      </div>
+                    <Link
+                      href="/our-team"
+                      className=" border-b-[1px] w-full text-start flex justify-between items-center "
+                    >
+                      <p className="text-[20px] text-primary">Our team</p>
+                      <ArrowForwardIosRounded className="text-primary" />
                     </Link>
-                    <Link href="/Contact">
-                      <div className="rounded-md py-2 px-4 transition duration-300">
-                        Contact
-                      </div>
+                    <Link
+                      href="/ndis-Services"
+                      className=" border-b-[1px] w-full text-start flex justify-between items-center "
+                    >
+                      <p className="text-[20px] text-primary">NDIS Services</p>
+                      <ArrowForwardIosRounded className="text-primary" />
                     </Link>
-                    <Link href="/work-with-us">
-                      <div className="rounded-md py-2 px-4 transition duration-300">
-                        Work with us
-                      </div>
+                    <Link
+                      href="/ndis-pricing"
+                      className=" border-b-[1px] w-full text-start flex justify-between items-center "
+                    >
+                      <p className="text-[20px] text-primary">NDIS Pricing</p>
+                      <ArrowForwardIosRounded className="text-primary" />
                     </Link>
-                    <Link href="/portal">
-                      <div className="rounded-md py-2 px-4 transition duration-300">
-                        Disability work portal
-                      </div>
+                    <Link
+                      href="/work-with-us"
+                      className=" border-b-[1px] w-full text-start flex justify-between items-center "
+                    >
+                      <p className="text-[20px] text-primary">Work with us</p>
+                      <ArrowForwardIosRounded className="text-primary" />
                     </Link>
                   </div>
                 </motion.div>

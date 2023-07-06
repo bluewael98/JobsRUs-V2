@@ -1,4 +1,4 @@
-import OurTeam from "@/components/OurTeam";
+import OurTeam from "@/scenes/OurTeam";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
