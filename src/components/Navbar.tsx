@@ -170,6 +170,7 @@ const Navbar = () => {
                     <Link
                       href="/"
                       className=" border-b-[1px] w-full text-start flex justify-between items-center "
+                      onClick={() => setIsMenuToggled(!isMenuToggled)}
                     >
                       <p className="text-[20px] text-primary">Home</p>
                       <ArrowForwardIosRounded className="text-primary" />
@@ -177,6 +178,7 @@ const Navbar = () => {
                     <Link
                       href="/portal"
                       className=" border-b-[1px] w-full text-start flex justify-between items-center "
+                      onClick={() => setIsMenuToggled(!isMenuToggled)}
                     >
                       <p className="text-[20px] text-primary">Job Portal</p>
                       <ArrowForwardIosRounded className="text-primary" />
@@ -184,6 +186,7 @@ const Navbar = () => {
                     <Link
                       href="/about"
                       className=" border-b-[1px] w-full text-start flex justify-between items-center "
+                      onClick={() => setIsMenuToggled(!isMenuToggled)}
                     >
                       <p className="text-[20px] text-primary">About us</p>
                       <ArrowForwardIosRounded className="text-primary" />
@@ -191,6 +194,7 @@ const Navbar = () => {
                     <Link
                       href="/our-team"
                       className=" border-b-[1px] w-full text-start flex justify-between items-center "
+                      onClick={() => setIsMenuToggled(!isMenuToggled)}
                     >
                       <p className="text-[20px] text-primary">Our team</p>
                       <ArrowForwardIosRounded className="text-primary" />
@@ -198,6 +202,7 @@ const Navbar = () => {
                     <Link
                       href="/ndis-Services"
                       className=" border-b-[1px] w-full text-start flex justify-between items-center "
+                      onClick={() => setIsMenuToggled(!isMenuToggled)}
                     >
                       <p className="text-[20px] text-primary">NDIS Services</p>
                       <ArrowForwardIosRounded className="text-primary" />
@@ -205,6 +210,7 @@ const Navbar = () => {
                     <Link
                       href="/ndis-pricing"
                       className=" border-b-[1px] w-full text-start flex justify-between items-center "
+                      onClick={() => setIsMenuToggled(!isMenuToggled)}
                     >
                       <p className="text-[20px] text-primary">NDIS Pricing</p>
                       <ArrowForwardIosRounded className="text-primary" />
@@ -212,6 +218,7 @@ const Navbar = () => {
                     <Link
                       href="/work-with-us"
                       className=" border-b-[1px] w-full text-start flex justify-between items-center "
+                      onClick={() => setIsMenuToggled(!isMenuToggled)}
                     >
                       <p className="text-[20px] text-primary">Work with us</p>
                       <ArrowForwardIosRounded className="text-primary" />
