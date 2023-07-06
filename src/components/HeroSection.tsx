@@ -1,6 +1,4 @@
 "use client";
-import WeHaveMoved from "@/components/WeHaveMoved";
-import MovedMobileView from "@/components/MovedMobileView";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -26,7 +24,6 @@ export default function HeroSection() {
   return (
     <>
       {/* LANDING PAGE */}
-      <WeHaveMoved />
       <div className="flex flex-col justify-center items-center py-10 font-Oswald font-semibold relative w-screen text-lavender  mb-[120px] bg-primary min-[1200px]:bg-lavender">
         <motion.div
           initial="hidden"
@@ -58,7 +55,6 @@ export default function HeroSection() {
               GET IN TOUCH
             </button>
           </Link>
-          <MovedMobileView />
         </motion.div>
         <motion.div
           initial="hidden"
