@@ -82,8 +82,8 @@ const Contact = () => {
                   <h2 className="text-xl font-bold ">Phone</h2>
                 </div>
 
-                <p>02 9703 5732</p>
-                <div className="flex items-center gap-2">
+                <p>0450 518 508</p>
+                {/* <div className="flex items-center gap-2">
                   <img
                     src="mobile.svg"
                     alt="a mobile icon"
@@ -92,7 +92,7 @@ const Contact = () => {
                   <h2 className="text-xl font-bold ">Mobile</h2>
                 </div>
 
-                <p>0450 518 508</p>
+                <p>0450 518 508</p> */}
               </div>
             </div>
             <div className="px-5 py-5">
