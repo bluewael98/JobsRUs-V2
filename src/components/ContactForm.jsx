@@ -117,9 +117,10 @@ const ContactForm = () => {
           <button
             type="submit"
             className="p-3  shadow-xl font-semibold text-lavender bg-primary mt-5 rounded-xl hover:scale-105
-              transition duration-300 "
+              transition duration-300 text-md flex justify-center items-center gap-3"
           >
-            SEND A MESSAGE
+            Refer a client
+            <img src="/handup.png" className="w-[50px]" />
           </button>
         </div>
       </form>
