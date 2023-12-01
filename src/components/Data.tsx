@@ -50,7 +50,7 @@ export const Employees = [
   },
   {
     name: "Amina",
-    position: "Manager",
+    position: "Quality and Safety Manager",
     cpi: "Cpi Safety Intervention Trained",
     language: "Fluent in Arabic",
     bio1: "I am a mother of two who has completed a Bachelor of Arts, Pathway to a Master of Teaching and...",
@@ -59,7 +59,7 @@ export const Employees = [
   },
   {
     name: "Layla",
-    position: "Supervisor",
+    position: "Manager",
     cpi: "Cpi Safety Intervention Trained",
     language: "Fluent in Arabic",
     bio1: "Becoming an Supervisor for people with disabilities allowed me to discover my passion...",
@@ -69,23 +69,12 @@ export const Employees = [
   },
   {
     name: "Khadeja",
-    position: "Employment Support Officer",
+    position: "Supervisor",
     cpi: "Cpi Safety Intervention Trained",
     language: "Fluent in Arabic",
     bio1: "Hi, my name is Khadeja, and I am currently studying a Bachelor of Primary and Special Education...",
     bio2: "Hi, my name is Khadeja, and I am currently studying a Bachelor of Primary and Special Education. I have a passion to make a difference in the education system and I aspire to make a change. I believe in equality for all individuals regardless of their abilities. Working with JobsRus will allow me to work further towards my goals and aspirations.",
     photo: "/team/Khadeja.jpg",
-  },
-  {
-    name: "Coreey",
-    position: "Employment Support Officer",
-    cpi: "Cpi Safety Intervention Trained",
-    language: null,
-    bio1: "Hi, im Coreey, and my background is in counselling and music. I have a passion for bringing....",
-    bio2: "Hi, im Corey, and my background is in counselling and music. I have a passion for bringing the best out of people, and motivating them to be their best version of themselves.\n\n\
-    I love bushwalking, spending time with my partner and daughter, playing guitar and trying out new and exciting food.\n\n\
-    Through Enaya, i hope to bring my skills in counselling, mental health, motivation and problem solving to help people achieve their goals and live a happier healthier life.",
-    photo: "/team/Corey.jpg",
   },
   {
     name: "Tahlia",
@@ -95,15 +84,6 @@ export const Employees = [
     bio1: "Hi, I'm Tahlia..",
     bio2: "Hi, I'm Tahlia..",
     photo: "/team/Tahlia.jpg",
-  },
-  {
-    name: "Zeinah",
-    position: "Employment Support Officer",
-    cpi: null,
-    language: "Fluent in Arabic",
-    bio1: "Hi, I'm Zeinah..",
-    bio2: "Hi, I'm Zeinah..",
-    photo: "/team/Zeinah.jpg",
   },
   {
     name: "Marwa",
@@ -122,15 +102,6 @@ export const Employees = [
     bio1: "Hi, im Carlos..",
     bio2: "Hi, im Carlos..",
     photo: "/team/Carlos.jpg",
-  },
-  {
-    name: "Alfred",
-    position: "Team Member",
-    cpi: null,
-    language: null,
-    bio1: "Alfred, or Alfie, is based at our classroom in Bankstown, he is loads of fluffy fun and just...",
-    bio2: "Alfred, or Alfie, is based at our classroom in Bankstown, he is loads of fluffy fun and just adorable to look at and feed.",
-    photo: "/team/Alfred.jpg",
   },
   {
     name: "Fish",
