@@ -55,17 +55,17 @@
     ]
   },
   {
-    "support": "SLES (School Leavers Employment Support)",
+    "support": "School Leaver Employment Supports (SLES)",
     "items": [
       {
-        "supportDesc": "SLES is run as a 10 week program and reviewed in the two week holidays/break between the programs. During those two weeks we will review progress and outcomes and make recommendations for the following term.",
+        "supportDesc": "School Leaver Employment Supports, is run as a 10 week program and reviewed in the two week holidays/break between the programs. During those two weeks we will review progress and outcomes and make recommendations for the following term.",
         "price": "-",
         "itemNo": "-"
       },
       {
         "supportDesc": "School Leaver Employment Supports",
         "price": "$70.87",
-        "itemNo": "09_008_0116_6_3"
+        "itemNo": "10_021_0102_5_3"
       }
     ]
   },
