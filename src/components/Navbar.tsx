@@ -82,16 +82,6 @@ const Navbar = () => {
                         </h2>
                       </Link>
                     </Dropdown.Item>
-                    <Dropdown.Item>
-                      <Link
-                        href="/ndis-pricing"
-                        className="group text-primary transition-all duration-300 ease-in-out"
-                      >
-                        <h2 className="text-[16px] bg-left-bottom bg-gradient-to-r from-primary to-primary bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] group-hover:opacity-80 transition-all duration-500 ease-out">
-                          NDIS PRICING
-                        </h2>
-                      </Link>
-                    </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
                 <Link
@@ -207,14 +197,7 @@ const Navbar = () => {
                       <p className="text-[20px] text-primary">NDIS Services</p>
                       <ArrowForwardIosRounded className="text-primary" />
                     </Link>
-                    <Link
-                      href="/ndis-pricing"
-                      className=" border-b-[1px] w-full text-start flex justify-between items-center "
-                      onClick={() => setIsMenuToggled(!isMenuToggled)}
-                    >
-                      <p className="text-[20px] text-primary">NDIS Pricing</p>
-                      <ArrowForwardIosRounded className="text-primary" />
-                    </Link>
+                 
                     <Link
                       href="/work-with-us"
                       className=" border-b-[1px] w-full text-start flex justify-between items-center "
