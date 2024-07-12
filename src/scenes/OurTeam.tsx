@@ -37,7 +37,7 @@ const OurTeam = () => {
           </div>
           <div className="flex  z-20 top-[25px] justify-center items-center shadow-5xl overflow-hidden  w-[600px]  ml-[100px] rounded-bl-[200px] pl-[25px] shadow--l5xl  whitespace-pre   bg-primary bg-opacity-80 ">
             <Image
-              src="/group.png"
+              src="/group.webp"
               alt="Photo of the JobsRUs Group"
               className="w-[600px] object-cover object-top  rounded-bl-[200px]"
               width={1740}

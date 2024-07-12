@@ -64,7 +64,7 @@ export const Employees = [
     language: "Fluent in Arabic",
     bio1: "Hi, my name is Khadeja, and I am currently studying a Bachelor of Primary and Special Education...",
     bio2: "Hi, my name is Khadeja, and I am currently studying a Bachelor of Primary and Special Education. I have a passion to make a difference in the education system and I aspire to make a change. I believe in equality for all individuals regardless of their abilities. Working with JobsRus will allow me to work further towards my goals and aspirations.",
-    photo: "/khadeja.png",
+    photo: "/Khadeja.webp",
   },
 
   {
@@ -83,7 +83,7 @@ export const Employees = [
     language: null,
     bio1: "Hi, im Carlos..",
     bio2: "Hi, im Carlos..",
-    photo: "/carlos.png",
+    photo: "/Carlos.webp",
   },
   {
     name: "Fish",
