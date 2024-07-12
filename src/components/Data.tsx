@@ -46,7 +46,7 @@ export const Employees = [
     bio2: "Hi, I’m Tureif. I have experience in working with complex behaviours and in implementing behaviour support plans. People say I’m very patient and headstrong, referred to as intense and tiring but eventually, people see it’s for everyone’s best interest.\n\n\
     I’m very passionate about my work and I love to lead my team by example. I believe a good leader always pushes his team to their limits and shows them what they can achieve and this is exactly what I try to do.\n\n\
     I enjoy spending time with my family, and going for long quiet drives or being alone in the wilderness surrounded by nothing but nature to appreciate the real beauty we have on this earth.",
-    photo: "/team/Tureif.jpg",
+    photo: "/tureif.png",
   },
   {
     name: "Amina",
@@ -55,17 +55,7 @@ export const Employees = [
     language: "Fluent in Arabic",
     bio1: "I am a mother of two who has completed a Bachelor of Arts, Pathway to a Master of Teaching and...",
     bio2: "I am a mother of two who has completed a Bachelor of Arts, Pathway to a Master of Teaching and a Diploma of Financial services. I have over 11 years of experience working with children of all ages and various needs. I enjoy creative projects, animals and nature. My favourite quote is “Aerodynamically, the bumble bee shouldn’t be able to fly, but it doesn’t know it, so it flies anyway",
-    photo: "/team/Amina.jpg",
-  },
-  {
-    name: "Layla",
-    position: "Manager",
-    cpi: "Cpi Safety Intervention Trained",
-    language: "Fluent in Arabic",
-    bio1: "Becoming an Supervisor for people with disabilities allowed me to discover my passion...",
-    bio2: "Becoming an Supervisor for people with disabilities allowed me to discover my passion for helping others. Studying Social Sciences (Psychology) paved the way for gaining the opportunity to work for Enaya & and building on the fundamentals I knew.\n\n\
-    Other than that, I consider myself to be an independent and punctual person who likes to push my limits and achieve new goals. In my spare time I enjoy shopping, driving and going to the movies or spending quality time with friends and family.",
-    photo: "/team/Layla.jpg",
+    photo: "/amina.png",
   },
   {
     name: "Khadeja",
@@ -74,25 +64,17 @@ export const Employees = [
     language: "Fluent in Arabic",
     bio1: "Hi, my name is Khadeja, and I am currently studying a Bachelor of Primary and Special Education...",
     bio2: "Hi, my name is Khadeja, and I am currently studying a Bachelor of Primary and Special Education. I have a passion to make a difference in the education system and I aspire to make a change. I believe in equality for all individuals regardless of their abilities. Working with JobsRus will allow me to work further towards my goals and aspirations.",
-    photo: "/team/Khadeja.jpg",
+    photo: "/khadeja.png",
   },
-  {
-    name: "Tahlia",
-    position: "Employment Support Officer",
-    cpi: "Cpi Safety Intervention Trained",
-    language: null,
-    bio1: "Hi, I'm Tahlia..",
-    bio2: "Hi, I'm Tahlia..",
-    photo: "/team/Tahlia.jpg",
-  },
+
   {
     name: "Marwa",
     position: "Employment Support Officer",
     cpi: null,
     language: "Fluent in Urdu",
-    bio1: "Hi, im Marwa..",
-    bio2: "Hi, im Marwa..",
-    photo: "/team/Marwa.jpg",
+    bio1: "Hi, my name is Marwa and I am currently studying Psychology. I am interested in working with neurodivergent individuals and seek to...",
+    bio2: "Hi, my name is Marwa and I am currently studying Psychology. I am interested in working with neurodivergent individuals and seek to understand and improve their mental and physical well-being in their every day lives.",
+    photo: "/1.png",
   },
   {
     name: "Carlos",
@@ -101,7 +83,7 @@ export const Employees = [
     language: null,
     bio1: "Hi, im Carlos..",
     bio2: "Hi, im Carlos..",
-    photo: "/team/Carlos.jpg",
+    photo: "/carlos.png",
   },
   {
     name: "Fish",
@@ -151,22 +133,22 @@ export const ServicesContainer = [
 
 export const HeroesData = [
   {
-    img: "/person3.webp",
+    img: "/person1.png",
     alt: "Unwavering Integrity, Transparent Support for NDIS Empowerment.",
     type: "Honesty",
   },
   {
-    img: "/person1.webp",
+    img: "/person2.png",
     alt: "Compassionate Understanding, Embracing Your NDIS Journey.",
     type: "Empathy",
   },
   {
-    img: "/person4.webp",
+    img: "/person4.png",
     alt: "Trusted Commitment, Consistent NDIS Support You Can Rely On.",
     type: "Reliability",
   },
   {
-    img: "/person2.webp",
+    img: "/person3.png",
     alt: "Inclusive Perspectives, Embracing Diversity in NDIS Care.",
     type: "Open Mindedness",
   },

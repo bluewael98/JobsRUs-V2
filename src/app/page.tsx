@@ -37,7 +37,7 @@ const Home = () => {
       {/* REVIEWS SECTION */}
       <Reviews />
 
-      {/* CONTACT SECTION */}
+      {/* CONTACT SECTION
       <section className=" flex sm:flex-row flex-col justify-center font-Oswald text-primary gap-10 px-5 mb-20 py-5 items-start relative">
         <div className="flex flex-col sm:w-[500px] xxs:w-full my-5 z-10 bg-primary text-lavender rounded-lg pl-5 ">
           <h1 className="text-2xl font-bold  my-5">OUR DETAILS</h1>
@@ -66,7 +66,7 @@ const Home = () => {
           <h1 className="text-2xl font-bold  my-5">CONTACT US HERE</h1>
           <ContactForm />
         </div>
-      </section>
+      </section> */}
     </section>
   );
 };

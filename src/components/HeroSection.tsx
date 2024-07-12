@@ -99,9 +99,9 @@ export default function HeroSection() {
             className="relative"
           >
             <img
-              src="/p1.webp"
+              src="/p1.png"
               alt=""
-              className="absolute w-[500px]  py-5 z-[7] min-[1200px]:flex hidden"
+              className="absolute w-[930px]  pt-5 z-[7] min-[1200px]:flex hidden"
             />
             <img
               src="/circles.svg"
