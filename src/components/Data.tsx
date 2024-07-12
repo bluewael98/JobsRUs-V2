@@ -99,7 +99,7 @@ export const Employees = [
 export const ServicesContainer = [
   {
     href: "/ndis-services#eso",
-    img: "/group.webp",
+    img: "/group.JPG",
     text: "EmploymentS Support",
     margin: "mt-[100px]",
     imageHeight: 1210,
