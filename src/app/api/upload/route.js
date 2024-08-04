@@ -7,11 +7,7 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-export const config = {
-    api: {
-        bodyParser: false,
-    },
-};
+export const runtime = 'edge';
 
 export async function POST(req) {
     const formData = await req.formData();
