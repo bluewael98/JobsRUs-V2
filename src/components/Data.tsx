@@ -21,7 +21,7 @@ export const ServicesData = [
   },
   {
     title: "Employment Support Officer",
-    image: "/header3.jpg",
+    image: "/group.JPG",
     body: "At JobRUs, we are committed to assisting you in building your strengths, skills, and independence, tailored specifically to your personal employment goals. \n\n\
     We understand that every individual is unique, with their own personality, perceptions, self-taught skills, strengths, and comfort levels. That's why we provide customized support to meet your individual needs through our Employment Support Officer. \n\n\
     Our comprehensive employment support covers a wide range of areas, including budgeting, money skills, legal responsibilities, cooking skills, driving skills, social skills, work etiquette, job searching, cover letter training, resume writing, interview skills, handling feedback, career goals, work exposure, work trials, work experience, and easy-to-learn workshops. \n\n\
@@ -29,7 +29,7 @@ export const ServicesData = [
   },
   {
     title: "Group Activities",
-    image: "/ourteamheader.JPG",
+    image: "/groupactivities.JPG",
     body: "Join us for a day of leisure and fun every Saturday with JobsRUs! Our group-based activities are designed to help you socialize, have a good time, and achieve group-based goals, all while exploring the beautiful sights and experiences that Sydney and its surroundings have to offer. \n\n\
     In the summer, we explore places like the Blue Mountains, new beaches, go-karting, animal parks, waterfalls, and more, while winter days call for indoor activities such as shopping, cooking, making healthy snacks, arts and crafts, board games, and movies. \n\n\
     Whatever the weather, we make sure to have a great time while also promoting social skills, team-building, and a sense of accomplishment. Join us for a memorable and enjoyable day out with our supportive and fun-loving team at JobsRUs!",
@@ -123,7 +123,7 @@ export const ServicesContainer = [
   },
   {
     href: "/ndis-services#group",
-    img: "/ourteamheader.JPG",
+    img: "/groupactivities.JPG",
     text: "Weekend Activities",
     margin: "mt-[0px]",
     imageHeight: 762,

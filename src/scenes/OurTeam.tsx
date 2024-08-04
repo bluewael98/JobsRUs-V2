@@ -21,7 +21,7 @@ const OurTeam = () => {
     setOpen(false);
   };
   return (
-    <section className=" flex justify-center flex-col mt-[80px] items-center font-Oswald">
+    <section className=" flex justify-center flex-col mt-[80px] items-center font-Oswald pb-10">
       <Head>
         <title>Our team</title>
         <meta name="description" content="Our team of HEROES." />
@@ -338,7 +338,7 @@ const OurTeam = () => {
           ))}
         </div>
       </div>
-      <ContactTransition />
+      
     </section>
   );
 };
