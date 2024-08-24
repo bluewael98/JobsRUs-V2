@@ -7,8 +7,11 @@ import Image from "next/image";
 interface TeamMember {
   bio: string;
   key: string;
+  role: string;
   photo: string;
+  Language: string | null;
   fullName: string;
+  cpiTrained: string;
 }
 
 const AdminTeam: React.FC = () => {
@@ -22,6 +25,17 @@ const AdminTeam: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
   const [username, setUsername] = useState<string>('');
   const [password, setPassword] = useState<string>('');
+
+  // New state for CPI, Language, and Role
+  const [cpiTrained, setCpiTrained] = useState<string>('No');
+  const [language, setLanguage] = useState<string>('');
+  const [role, setRole] = useState<string>('');
+
+  const languages = [
+    "English", "Mandarin", "Hindi", "Spanish", "French", "Arabic", "Bengali", 
+    "Russian", "Portuguese", "Urdu", "Indonesian", "German", "Japanese", 
+    "Swahili", "Marathi", "Telugu", "Turkish", "Tamil", "Korean", "Vietnamese"
+  ];
 
   const fetchTeamMembers = async (url: string) => {
     setLoading(true);
@@ -78,11 +92,14 @@ const AdminTeam: React.FC = () => {
   const handleApprove = async (member: TeamMember) => {
     setIsSubmitting(true);
     try {
-      const { fullName, bio, photo } = member;
+      const { fullName, bio, photo, role, cpiTrained, Language } = member;
       await axios.post("https://hook.eu2.make.com/uf3eiocr73hx954wzjahvdjqotsx8o2o", {
         fullName,
         bio,
-        photo
+        photo,
+        cpiTrained,
+        language: Language,
+        role,
       });
       await handleDelete(member.key);
       setModalMessage("Successfully Approved");
@@ -183,9 +200,8 @@ const AdminTeam: React.FC = () => {
                         </div>
                       )}
                       <h2 className="text-xl font-semibold text-primary mt-5">{member.fullName}</h2>
-                      <p className="w-[240px] text-alt2">{member.bio}</p>
                       <button
-                        className="absolute bottom-2 right-2 p-2 bg-red-600 text-white font-semibold rounded-full shadow-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
+                        className="absolute top-0 opacity-40 hover:opacity-100 right-0 p-2 bg-red-600 text-white font-semibold rounded-full shadow-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
                         onClick={() => handleDelete(member.key)}
                         disabled={isSubmitting}
                       >
@@ -198,22 +214,6 @@ const AdminTeam: React.FC = () => {
                           'Remove'
                         )}
                       </button>
-                      {view === 'submissions' && (
-                        <button
-                          className="absolute bottom-2 left-2 p-2 bg-green-600 text-white font-semibold rounded-full shadow-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500"
-                          onClick={() => handleApprove(member)}
-                          disabled={isSubmitting}
-                        >
-                          {isSubmitting ? (
-                            <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
-                            </svg>
-                          ) : (
-                            'Approve'
-                          )}
-                        </button>
-                      )}
                     </div>
                   ))}
                 </div>
@@ -249,10 +249,80 @@ const AdminTeam: React.FC = () => {
                         <p key={index}>{paragraph}</p>
                       ))}
                     </div>
+                    {view === 'submissions' && (
+                      <>
+                        <div className="mt-4 text-xl text-alt2 gap-4 flex flex-col">
+                          <label className="text-primary font-semibold">Is Cpi Trained?</label>
+                          <div className="flex justify-center gap-5">
+                            <label>
+                              <input
+                                type="radio"
+                                name={`cpiTrained-${member.key}`}
+                                value="Yes"
+                                checked={cpiTrained === "Yes"}
+                                onChange={(e) => setCpiTrained(e.target.value)}
+                              />
+                              Yes
+                            </label>
+                            <label>
+                              <input
+                                type="radio"
+                                name={`cpiTrained-${member.key}`}
+                                value="No"
+                                checked={cpiTrained === "No"}
+                                onChange={(e) => setCpiTrained(e.target.value)}
+                              />
+                              No
+                            </label>
+                          </div>
+                        </div>
+                        <div className="mt-4 text-xl text-alt2 gap-4 flex flex-col">
+                          <label className="text-primary font-semibold">Fluent in additional languages?</label>
+                          <select
+                            className="p-2 border-2 border-primary rounded-md"
+                            value={language}
+                            onChange={(e) => setLanguage(e.target.value)}
+                          >
+                            <option value="">Select a language</option>
+                            {languages.map((lang) => (
+                              <option key={lang} value={lang}>
+                                {lang}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                        <div className="mt-4 text-xl text-alt2 gap-4 flex flex-col">
+                          <label className="text-primary font-semibold">Role</label>
+                          <input
+                            type="text"
+                            className="p-2 border-2 border-primary rounded-md"
+                            value={role}
+                            onChange={(e) => setRole(e.target.value)}
+                            placeholder="Enter the role"
+                          />
+                        </div>
+                        <div className="mt-4">
+                          <button
+                            type="button"
+                            className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-primary rounded-md hover:bg-primary-dark focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary"
+                            onClick={() => handleApprove(member)}
+                          >
+                            {isSubmitting ? (
+                              <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                              </svg>
+                            ) : (
+                              "Approve"
+                            )}
+                          </button>
+                        </div>
+                      </>
+                    )}
                     <div className="mt-4">
                       <button
                         type="button"
-                        className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-primary rounded-md hover:bg-primary-dark focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary"
+                        className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-secondary rounded-md hover:bg-secondary-dark focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-secondary"
                         onClick={closeModal}
                       >
                         Close

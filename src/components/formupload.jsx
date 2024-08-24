@@ -47,7 +47,6 @@ const FileUpload = () => {
                 },
                 body: JSON.stringify({
                     firstName,
-                    lastName,
                     bio,
                     imageUrl: url,
                 }),
@@ -75,7 +74,7 @@ const FileUpload = () => {
                 <div className="flex md:flex-row flex-col justify-center items-center gap-2">
                     <div className="w-full flex flex-col gap-5">
                         <label htmlFor="firstName" className="font-semibold text-primary text-opacity-90">
-                            First Name
+                             Name
                         </label>
                         <input
                             id="firstName"
@@ -88,20 +87,6 @@ const FileUpload = () => {
                         />
                     </div>
 
-                    <div className="w-full flex flex-col gap-5">
-                        <label htmlFor="lastName" className="font-semibold text-primary text-opacity-90">
-                            Last Name
-                        </label>
-                        <input
-                            id="lastName"
-                            className="w-full bg-lavender text-black placeholder-opaque-black p-3 border-2 border-primary border-opacity-60"
-                            type="text"
-                            placeholder="Last Name"
-                            value={lastName}
-                            onChange={(e) => setLastName(e.target.value)}
-                            required
-                        />
-                    </div>
                 </div>
 
                 <div className="w-full flex flex-col gap-5 mt-5">
