@@ -4,12 +4,11 @@ import { Dialog, Transition } from "@headlessui/react";
 import UseMediaQuery from "@/components/UseMediaQuery";
 import WeAreHiring from "@/components/WeAreHiring";
 import ContactTransition from "@/components/ContactTransition";
+import { Employees, OurTeamData, OurTeamMobile } from "@/components/Data";
 import axios from "axios";
 import Image from "next/image";
 import Head from "next/head";
 
-// Local data for Tureif
-import { Employees } from "@/components/Data";
 
 interface Employee {
   bio: string;
@@ -73,17 +72,17 @@ const OurTeam = () => {
       <WeAreHiring />
       {/* HEADER */}
       {isLargeDevice ? (
-        <div className="w-screen bg-primary relative flex justify-between overflow-hidden mb-[5rem]">
-          <div className="flex flex-col justify-center pl-10">
-            <h1 className="xxs:text-4xl md:text-6xl font-extrabold font-Oswald bottom-4 text-lavender z-10">
+        <div className="w-screen  bg-primary relative flex justify-between overflow-hidden  mb-[5rem]">
+          <div className="flex flex-col justify-center pl-10 ">
+            <h1 className="  xxs:text-4xl md:text-6xl font-extrabold font-Oswald bottom-4  text-lavender z-10 ">
               OUR TEAM OF HEROES
             </h1>
           </div>
-          <div className="flex z-20 top-[25px] justify-center items-center shadow-5xl overflow-hidden w-[600px] ml-[100px] rounded-bl-[200px] pl-[25px] shadow--l5xl whitespace-pre bg-primary bg-opacity-80">
+          <div className="flex  z-20 top-[25px] justify-center items-center shadow-5xl overflow-hidden  w-[600px]  ml-[100px] rounded-bl-[200px] pl-[25px] shadow--l5xl  whitespace-pre   bg-primary bg-opacity-80 ">
             <Image
               src="/group.webp"
               alt="Photo of the JobsRUs Group"
-              className="w-[600px] object-cover object-top rounded-bl-[200px]"
+              className="w-[600px] object-cover object-top  rounded-bl-[200px]"
               width={1740}
               height={1210}
             />
@@ -95,9 +94,9 @@ const OurTeam = () => {
           />
         </div>
       ) : (
-        <div className="w-screen xxs:max-h-[240px] xs:max-h-[500px] bg-primary relative flex justify-center items-center overflow-hidden py-20 mb-[5rem]">
+        <div className="w-screen xxs:max-h-[240px] xs:max-h-[500px]  bg-primary relative flex justify-center items-center overflow-hidden py-20  mb-[5rem]">
           <div className="flex flex-col justify-center items-center text-center z-10 font-Bebas">
-            <h1 className="xxs:text-3xl md:text-6xl font-extrabold font-Oswald bottom-4 text-lavender z-10">
+            <h1 className="  xxs:text-3xl md:text-6xl font-extrabold font-Oswald bottom-4  text-lavender z-10 ">
               OUR TEAM
             </h1>
           </div>
@@ -110,35 +109,35 @@ const OurTeam = () => {
       )}
 
       {isSmallDevice ? (
-        <div className="flex sm:px-20 md:px-[100px] xlg:px-[200px] xxs:flex-col xlg:flex-row gap-3 justify-center items-center w-full pt-10 mx-auto text-opacity-90">
-          <div className="flex flex-col justify-center text-center gap-3">
+        <div className="flex sm:px-20 md:px-[100px] xlg:px-[200px] xxs:flex-col xlg:flex-row gap-3 justify-center items-center w-full pt-10 mx-auto text-opacity-90 ">
+          <div className=" flex flex-col justify-center text-center gap-3">
             <div className="w-screen flex justify-center items-center px-10 flex-col">
-              <h1 className="xxs:text-4xl md:text-6xl font-extrabold font-Oswald bottom-4 text-primary z-10">
+              <h1 className="  xxs:text-4xl md:text-6xl font-extrabold font-Oswald bottom-4  text-primary z-10 ">
                 OUR TEAM OF HEROES
               </h1>
               <Image
                 src="/group.webp"
                 alt="A photo of the JobsRUs Group"
-                className="z-10 w-screen border-8 border-lavender rounded-[100px]"
+                className=" z-10 w-screen border-8 border-lavender rounded-[100px]"
                 width={1740}
                 height={1210}
               />
             </div>
             {/* P1*/}
-            {employees.map((employee, index) => (
+            {OurTeamMobile.map((data, index) => (
               <div
                 className="flex flex-col items-center justify-between relative"
                 key={index}
               >
-                <div className="flex justify-center items-center align-top w-[screen] relative">
+                <div className="flex justify-center items-center align-top w-[screen] relative ">
                   <div className="bg-alt2 text-lavender mt-10 p-[2rem] text-xl flex flex-col gap-5 justify-center items-center font-Oswald rounded-2xl text-center">
-                    <p className="max-w-screen truncate-bio">{employee.bio}</p>
+                    <p className=" max-w-screen">{data.message}</p>
                     <Image
-                      src={employee.photo}
-                      alt={`Photo of ${employee.fullName}`}
+                      src={data.img}
+                      alt={data.alt}
                       className="min-w-[100px] max-w-[200px]"
-                      height={200}
-                      width={200}
+                      height={data.imageHeight}
+                      width={data.imageWidth}
                     />
                   </div>
                 </div>
@@ -151,23 +150,23 @@ const OurTeam = () => {
           <div className="xlg:w-[70%] md:w-[100%] flex flex-col xxs:justify-center xxs:items-center xxs:text-center xlg:justify-start xlg:items-start xlg:text-left gap-2">
             <h1 className="md:text-5xl xxs:text-2xl font text-primary">
               Meet our team of{" "}
-              <span className="font-semibold opacity-100 italic">HEROES.</span>
+              <span className=" font-semibold opacity-100 italic">HEROES.</span>
             </h1>
-            <h1 className="md:text-5xl xxs:text-2xl font text-primary">
+            <h1 className="md:text-5xl xxs:text-2xl  font text-primary">
+              {" "}
               Honest, Empathetic, Reliable, and Open-minded individuals.
             </h1>
-            {employees.map((employee, index) => (
+            {OurTeamData.map((data, index) => (
               <p
-                className="text-lg text-alt2 text-semibold font-Oswald truncate-bio"
+                className="text-lg text-alt2 text-semibold font-Oswald "
                 key={index}
               >
-                {employee.bio}
+                {data.message}
               </p>
             ))}
           </div>
         </div>
       )}
-
       {/* TEAM */}
       <div className="flex justify-center items-center flex-col">
         <h1 className="font-semibold text-4xl text-primary mt-[100px] mb-10">
