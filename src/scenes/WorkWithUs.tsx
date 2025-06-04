@@ -13,7 +13,7 @@ export default function WorkWithUs() {
           content="Come work with us, we would love to have you part of our team."
         />
       </Head>
-      <Widget id="V0OUoPYk" className="w-screen h-screen" />
+      <Widget id="b6dq5EWB" className="w-screen h-screen" />
     </main>
   );
 }

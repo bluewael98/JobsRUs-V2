@@ -190,7 +190,7 @@ const Navbar = () => {
                       <ArrowForwardIosRounded className="text-primary" />
                     </Link>
                     <Link
-                      href="/ndis-Services"
+                      href="/ndis-services"
                       className=" border-b-[1px] w-full text-start flex justify-between items-center "
                       onClick={() => setIsMenuToggled(!isMenuToggled)}
                     >
