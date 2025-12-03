@@ -42,10 +42,10 @@ export const Employees = [
     position: "Managing Director",
     cpi: "Cpi Safety Intervention Trainer",
     language: "Fluent in Arabic",
-    bio1: "Hi, I’m Tureif. I have experience in working with complex behaviours and in implementing...",
-    bio2: "Hi, I’m Tureif. I have experience in working with complex behaviours and in implementing behaviour support plans. People say I’m very patient and headstrong, referred to as intense and tiring but eventually, people see it’s for everyone’s best interest.\n\n\
-    I’m very passionate about my work and I love to lead my team by example. I believe a good leader always pushes his team to their limits and shows them what they can achieve and this is exactly what I try to do.\n\n\
-    I enjoy spending time with my family, and going for long quiet drives or being alone in the wilderness surrounded by nothing but nature to appreciate the real beauty we have on this earth.",
+    bio1: "Building individuals capacity is a key passion of mine...",
+    bio2: "Building individual capacity is a key passion of mine. I believe in teaching a person how to fish rather than providing a fish. However, I am a firm believer that the person will learn to fish better once they have a full belly. Working with complex behaviours excites me, and I’m always up for the challenge to decode what they’re truly trying to communicate. As a CPI Safety Intervention trainer, I ensure all supports are person-centred and least intrusive. I have also been signed off as a trainer from the Train the Trainer program by Dr Tareck Suwaidan.\n\n\
+    Over the years, I have worked and collaborated with all types of therapists to ensure a multidisciplinary approach for all those under my care.\n\n\
+    I am a believer in making the lives of others easier so that, on the Day of Judgement, Allah will make our lives easier, God willing. Therefore, whether it’s staff, clients, family, or anyone in our community that needs support, I always say my door is always open.",
     photo: "/tureif.png",
   },
   {
