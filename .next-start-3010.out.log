@@ -1,0 +1,6 @@
+
+> jobsrus2.0@0.1.0 start
+> next start -p 3010
+
+- ready started server on 0.0.0.0:3010, url: http://localhost:3010
+- [36minfo[39m Loaded env from C:\Users\wael\OneDrive\Desktop\jrus\JobsRUs-V2\.env

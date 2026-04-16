@@ -4,6 +4,7 @@ import Reviews from "@/components/Reviews";
 import ContactForm from "@/components/ContactForm";
 import Facts from "@/components/Facts";
 import HeroSection from "@/components/HeroSection";
+import EmployeeDirectory from "@/components/employee-directory";
 import Head from "next/head";
 import { Metadata } from "next";
 
@@ -33,6 +34,18 @@ const Home = () => {
 
       {/* OUR MESSAGE SECTION */}
       <TheMessage />
+
+      <div className="px-6 pb-10 sm:px-12 md:px-[100px] xlg:px-[160px]">
+        <EmployeeDirectory
+          companySlug="jobsrus"
+          companyName="JobsRUs"
+          limit={4}
+          heading="Meet The JobsRUs Team"
+          intro="A few of the people delivering personalised, participant-focused support across JobsRUs."
+          ctaHref="/our-team"
+          ctaLabel="See the full team"
+        />
+      </div>
 
       {/* REVIEWS SECTION */}
       <Reviews />

@@ -2,10 +2,10 @@ import OurTeam from "@/scenes/OurTeam";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Our team",
-  description: "Our team of HEROES.",
+  title: "JobsRUs Team",
+  description: "Meet the JobsRUs team.",
 };
 
 export default function Page() {
-  return <OurTeam />;
+  return <OurTeam companySlug="jobsrus" companyName="JobsRUs" />;
 }

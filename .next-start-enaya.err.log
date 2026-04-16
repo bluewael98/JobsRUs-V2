@@ -1,0 +1,4 @@
+(node:19124) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+When server rendering, you must wrap your application in an <SSRProvider> to ensure consistent ids are generated between the client and server.
+When server rendering, you must wrap your application in an <SSRProvider> to ensure consistent ids are generated between the client and server.
