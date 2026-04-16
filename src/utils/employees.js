@@ -60,7 +60,7 @@ export function normalizeEmployee(employee, companyName = DEFAULT_COMPANY_NAME) 
     employee?.name ||
     employee?.full_name ||
     `[${companyName}] team member`;
-  const title = employee?.title || employee?.role || "";
+  const title = employee?.title || "";
   const summary =
     employee?.bio ||
     employee?.description ||
