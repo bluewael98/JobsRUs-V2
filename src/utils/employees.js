@@ -1,5 +1,8 @@
 export const DEFAULT_COMPANY_SLUG = "jobsrus";
 export const DEFAULT_COMPANY_NAME = "JobsRUs";
+const TITLE_OVERRIDES = {
+  "JobsRUs Director": "JobsRUs Team Members",
+};
 
 const TRUE_LIKE_CPI_VALUES = new Set(["true", "yes", "y", "1"]);
 
@@ -60,7 +63,8 @@ export function normalizeEmployee(employee, companyName = DEFAULT_COMPANY_NAME) 
     employee?.name ||
     employee?.full_name ||
     `[${companyName}] team member`;
-  const title = employee?.title || "";
+  const rawTitle = employee?.title || "";
+  const title = TITLE_OVERRIDES[rawTitle] || rawTitle;
   const summary =
     employee?.bio ||
     employee?.description ||
